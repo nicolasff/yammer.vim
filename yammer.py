@@ -99,8 +99,8 @@ class MessageFormatter:
 
                 tm['children'].append(m)
 
-            top_msgs.append(tm)
             tm['children'].sort(key=lambda m: self.date_to_timestamp(m['date']))
+            top_msgs.append(tm)
 
         top_msgs.sort(key=lambda m: self.date_to_timestamp(m['latest']))
         top_msgs.reverse()
