@@ -5,7 +5,7 @@ endif
 
 
 
-function! s:YammerShow()
+function! s:Yammer()
 python << endpython
 import vim, sys, os
 sys.path.append(os.path.expanduser("~/.vim/plugin"))
@@ -49,8 +49,8 @@ endfunction
 
 
 
-if !exists(":YammerShow")
-    command YammerShow :call s:YammerShow()
+if !exists(":Yammer")
+    command Yammer :call s:Yammer()
 endif
 
 if !exists(":YammerPost")

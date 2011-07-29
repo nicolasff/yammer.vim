@@ -76,6 +76,8 @@ class MessageParser:
 
         txt += message_body
 
+        txt = txt.replace("\n", " ")
+
         return {'text': txt, 'parent': m['thread_id'], 'id': m['id'], 'date': m['created_at']}
 
 class MessageFormatter:
