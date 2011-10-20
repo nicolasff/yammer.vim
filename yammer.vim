@@ -24,7 +24,7 @@ s = mf.format(messages)
 l = s.split("\n")
 vim.current.buffer[0] = l[0].encode('utf-8')
 for line in l[1:]:
-    vim.current.buffer.append(str(line))
+    vim.current.buffer.append(line.encode('utf-8'))
 endpython
 endfunction
 
